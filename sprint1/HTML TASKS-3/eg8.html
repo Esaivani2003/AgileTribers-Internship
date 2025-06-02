@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      margin: auto;
+      width:50%;
+     border: solid 2px black;
+     
+    }
+    p{
+        color: #000;
+    }
+
+    .content-wrapper {
+      display: flex;
+      /* justify-content: space-between; */
+      align-items: flex-start;
+    }
+
+    .main {
+      width: 60%;
+     
+      color: white;
+      padding: 10px;
+    }
+
+    .image {
+      width: 25%;
+     
+      padding: 10px;
+      margin: 20px;
+      margin-top:40px
+    }
+
+    .image img {
+      width: 300px;
+      height: 300px;
+    }
+
+    h2 {
+      background-color: #9bd0ff;
+      border-bottom: 1px solid #999;
+      margin-top:20px;
+      padding-bottom: 5px;
+      color: black;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 10px;
+      border-collapse: collapse;
+      background-color: white;
+      color: black;
+    }
+
+    th, td {
+      border: 1px solid #000;
+      padding: 5px;
+    }
+
+    .listener {
+      font-style: italic;
+      text-align: center;
+      background-color: #eee;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content-wrapper">
+      <div class="main">
+        <h2>Courses</h2>
+        <p>Here are some courses I’ve taken:</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Course Number</th>
+              <th>Course Title</th>
+              <th>Semester Taken</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>6.81</td>
+             <td><span>Userint
+              <td>Spring 2014</td>
+            </tr>
+            <tr>
+              <td>6.034</td>
+              <td>Artificial Intelligence</td>
+              <td>Fall 2013</td>
+            </tr>
+            <tr>
+              <td>6.006</td>
+              <td>Introduction to Algorithms</td>
+              <td>Fall 2013</td>
+            </tr>
+            <tr>
+              <td colspan="3" class="listener">Listener</td>
+            </tr>
+            <tr>
+              <td>6.867</td>
+              <td>Machine Learning</td>
+              <td>Fall 2013</td>
+            </tr>
+            <tr>
+              <td>6.830</td>
+              <td>Database Systems</td>
+              <td>Fall 2012</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Interests</h2>
+        <p>I am interested in <strong>HCI</strong>, memes, and YouTube videos.</p>
+      </div>
+
+      <div class="image">
+        <img src="public/bear.jpeg" alt="Bear doing science">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

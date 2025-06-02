@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Awesome Blog</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #4687d7;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      
+    }
+   .green-box {
+  background-color: #6ebea5; /* light green */
+  width: 100%; /* or max-width: 600px; for example */
+  margin: auto;
+  padding: 20px;
+  overflow: hidden; /* for clean fade */
+  text-align: center; /* optional */
+}
+
+.green-box img {
+  display: block;
+  width: 80%;       /* limit width so it doesn’t fill entire container */
+  max-width: 400px; /* optional max width */
+  height: auto;
+  margin: 0 auto;   /* center horizontally */
+  object-fit: cover;
+  background: transparent;
+  
+  /* fade edges */
+  mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
+}
+
+
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+    h2{
+        text-decoration: underline;
+    }
+
+    .title {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .nav-links a {
+      margin-left: 20px;
+      
+      color: blue;
+      font-weight: 500;
+    }
+
+    .hero-img {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    .layout {
+      display: flex;
+      margin-top: 30px;
+    }
+
+    .main {
+      flex: 3;
+      padding-right: 20px;
+    }
+
+    .main article {
+      margin-bottom: 30px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 20px;
+      padding-left: 20px;
+    }
+
+    .main h2 {
+      color: purple;
+      font-size: 20px;
+    }
+
+    aside {
+      flex: 1;
+    }
+
+    .sidebar {
+      background-color: #ffe680;
+      margin: 20px;
+      padding: 6px;
+      
+    }
+
+    .sidebar h3 {
+      background-color: #ff6666;
+      color: white;
+      margin: 0;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .sidebar ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    .sidebar a {
+      color: #000;
+      
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <header>
+      <div class="title">My Awesome Blog</div>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+      </div>
+    </header>
+
+    <!-- Full-width Image -->
+   <div class="green-box">
+  <img src="public/computer img.jpeg" alt="Centered Image">
+</div>
+
+    <!-- Main and Sidebar -->
+    <div class="layout">
+
+      <!-- Main Blog Posts -->
+      <div class="main">
+        <article>
+          <h2>Title of the first blog</h2>
+          <p>By Aziz Ali</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue commodo neque, nec laoreet leo consequat id. Vivamus volutpat dolor quis odio fermentum aliquet non non tellus. Morbi suscipit sapien eget neque eleifend, sit amet placerat massa scelerisque. Lorem ipsum dolor.</p>
+        </article>
+
+        <article>
+          <h2>Title of the first blog</h2>
+          <p>By Aziz Ali</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue commodo neque, nec laoreet leo consequat id. Vivamus volutpat dolor quis odio fermentum aliquet non non tellus. Morbi suscipit sapien eget neque eleifend, sit amet placerat massa scelerisque.</p>
+        </article>
+      </div>
+
+      <!-- Sidebar -->
+      <aside>
+        <div class="sidebar">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="https://azizali.com" target="_blank">AzizAli.com</a></li>
+            <li><a href="https://ilovecoding.org" target="_blank">iLoveCoding.org</a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+</body>
+</html>
