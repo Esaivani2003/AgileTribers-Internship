@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .wrapper {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      border: 5px solid black;
+    }
+
+    header {
+      background-color: #ffc8ff;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+    }
+
+    nav {
+      background-color: #9923eb;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    .content {
+      display: flex;
+      flex: 1;
+      
+    }
+
+    .left {
+      height: 100px;  
+      flex: 1;
+      background-color: #ff96ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+
+    }
+
+    
+
+    footer {
+      background-color: #ffc8ff;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="wrapper">
+      <header>Header</header>
+      <nav>Navbar</nav>
+      <div class="content">
+        <div class="left">Left Panel</div>
+        <div class="right">
+          main content
+        </div>
+      </div>
+      <footer>Footer</footer>
+    </div>
+  </div>
+</body>
+</html>

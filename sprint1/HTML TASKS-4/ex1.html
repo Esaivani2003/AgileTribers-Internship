@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Full Layout with Article and Section</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+  .wrapper{
+    margin: auto;
+    width: 20%;
+    margin-top: 40px;
+    border: 2px solid black;
+  }
+    header {
+      background: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin: 4px;
+    }
+ footer {
+      background: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin: 4px;
+    }
+    .container {
+      display: flex;
+      gap: 10px;
+      padding: 10px;
+    }
+
+   
+
+    main {
+      background: lightblue;
+      flex: 1;
+      padding: 10px;
+    }
+
+    section {
+      background: lightgreen;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    article {
+      background: lightyellow;
+      padding: 10px;
+    }
+
+    .aside {
+      background: lightpink;
+      width: 20%;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <header>Header</header>
+
+  <div class="container">
+  
+
+    <main>
+      <section>Section </section>
+      <article>Article</article>
+    </main>
+
+    <div class="aside">Aside</div>
+  </div>
+  <footer>footer</footer>
+</div>
+</body>
+</html>
